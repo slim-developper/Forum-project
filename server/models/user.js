@@ -7,10 +7,10 @@ const userSchema = mongoose.Schema({
   id: { type: String },
   isUser:{
     type:Boolean,
-    default:true,required: false
+    default:true
     },isAdmin:{
       type:Boolean,
-      default:false,required: false
+      default:false,
       }
 });
 
