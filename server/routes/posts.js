@@ -15,13 +15,13 @@ router.post('/',auth,  createPost);
 router.patch('/:id', auth, updatePost);
 router.delete('/:id', auth, deletePost);
 router.patch('/:id/likePost', auth, likePost);
-
+//router.get('/show/:id', getPosts);
 //compete
 router.get('/', getPosts);
 router.patch('/:id/likePost', authComp, likePost);
 
 //admin
-router.get('/', getPosts);
-router.delete('/:id', authAdmin, deletePost);
+//router.get('/', getPosts);
+//router.delete('/:id', authAdmin, deletePost);
 
 export default router;

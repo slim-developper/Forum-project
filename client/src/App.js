@@ -16,11 +16,13 @@ const App = () => (
         <Route path="/" exact component={Home} />
         <Route path="/auth" exact component={Auth} />
         <Route path="/compete" exact component={AuthCompete} />
-        
+        <Route path="/show" exact component={show} />
       </Switch>
     </Container>
   </BrowserRouter>
 );
 
 export default App;
-//<Route path="/show" render={()=>(<Products listProducts={listProducts}/>)} />
+
+//<Route path="/show/:id" exact component={show} />
+//<Route path="/show/:id" render={(DefaultProps)=><show  {...DefaultProps} Posts={Posts}    />}  />
